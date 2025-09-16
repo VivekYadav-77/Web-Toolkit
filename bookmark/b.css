@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #232526, #414345);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  min-height: 100vh;
+}
+
+#maindiv {
+  background-color: #111;
+  margin-top: 40px;
+  min-height: 200px;
+  width: 80%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid yellow;
+
+  padding: 25px;
+  border-radius: 12px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 6px black;
+}
+
+h2 {
+  margin: 20px 0 10px 0;
+  border-bottom: 2px solid yellow;
+  padding-bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+#divofform {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.inputs {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.inputs label {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.inputs input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+#button {
+  padding: 10px 20px;
+  background-color: yellow;
+  color: black;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+#button:hover {
+  background-color: gold;
+  transform: scale(1.05);
+}
+
+#search {
+  width: 90%;
+  padding: 8px 10px;
+  margin: 10px 0 15px 0;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.bookmark-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  max-height: 200px;  
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.bookmark-list::-webkit-scrollbar {
+  width: 8px;
+}
+.bookmark-list::-webkit-scrollbar-thumb {
+  background: yellow;
+  border-radius: 4px;
+}
+.bookmark-list::-webkit-scrollbar-track {
+  background: #333;
+}
+
+.divs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 15px 20px;
+  border-radius: 8px;
+  width: 95%;
+  box-shadow: 0 0 8px rgba(255, 255, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.divs:hover {
+  transform: scale(1.02);
+}
+
+.bookmark-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bookmark-info img {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.bookmark-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bookmark-details p {
+  margin: 0;
+  font-size: 13px;
+  color: #bbb;
+}
+
+.bookmark-actions button {
+  margin-left: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.bookmark-actions button:hover {
+  opacity: 0.8;
+}
+
+.visit-btn {
+  background-color: limegreen;
+  color: white;
+}
+
+.deletbutton {
+  background-color: red;
+  color: white;
+}
+
+.empty-msg {
+  color: #aaa;
+  font-style: italic;
+  margin-top: 15px;
+}

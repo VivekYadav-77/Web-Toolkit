@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📑 Bookmarker</title>
+  <link rel="stylesheet" href="b.css">
+</head>
+<body>
+  <div id="maindiv">
+    <h1>📑 Bookmarker</h1>
+
+    <div id="divofform">
+      <form id="form">
+        <div class="inputs">
+          <label for="websitename">Website Name</label>
+          <input type="text" id="websitename" placeholder="Enter site name" required>
+        </div>
+        <div class="inputs">
+          <label for="websiteurl">Website URL</label>
+          <input type="url" id="websiteurl" placeholder="https://example.com" required>
+        </div>
+        <button type="submit" id="button">+ Add Bookmark</button>
+      </form>
+    </div>
+
+    <h2>Saved Bookmarks</h2>
+
+    <input type="text" id="search" placeholder="Search bookmarks..." />
+
+    <div id="bookmarksadded" class="bookmark-list"></div>
+  </div>
+  <script src="b.js"></script>
+</body>
+</html>
