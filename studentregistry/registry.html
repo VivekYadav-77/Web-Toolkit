@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registry</title>
+  <link rel="stylesheet" href="registry.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 Student Registry</h1>
+
+    <form id="form">
+      <div class="inputgroup">
+        <label>First Name</label>
+        <input type="text" id="fname" required>
+      </div>
+      <div class="inputgroup">
+        <label>Last Name</label>
+        <input type="text" id="lname" required>
+      </div>
+      <div class="inputgroup">
+        <label>Date of Birth</label>
+        <input type="date" id="dob" required>
+      </div>
+      <div class="buttons">
+        <button type="submit" id="addEditBtn">Add / Edit</button>
+        <button type="button" id="removeBtn">Remove</button>
+      </div>
+    </form>
+
+    <div class="tools">
+      <input type="text" id="search" placeholder="Search by name or DOB">
+      <button id="exportJSON">Export JSON</button>
+      <button id="exportCSV">Export CSV</button>
+    </div>
+
+    <div class="table-container">
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th data-key="index">#</th>
+            <th data-key="fname">First Name</th>
+            <th data-key="lname">Last Name</th>
+            <th data-key="dob">DOB</th>
+            <th data-key="age">Age</th>
+            <th data-key="createdAt">Created</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="registry.js"></script>
+</body>
+</html>
