@@ -38,7 +38,7 @@ A collection of **small, practical, and interactive web applications** built wit
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/<your-username>/web-toolkit.git
+git clone https://github.com/VivekYadav-77/web-toolkit.git
 ```
 
 2. Navigate to the project folder:
